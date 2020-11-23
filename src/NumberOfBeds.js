@@ -2,7 +2,7 @@ import React from 'react'
 
 const NumberOfBeds = (props) => {
     return (
-        <p>Number of Beds</p>
+         <p>This is the number of beds page.</p>
     )
 }
 
