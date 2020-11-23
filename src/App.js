@@ -5,7 +5,7 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import NumberOfBeds from './NumberOfBeds'
 import Map from './Map'
-import Settings from '.Settings'
+import Settings from './Settings'
 import LandingPage from './LandingPage'
 import Help from './Help'
 
