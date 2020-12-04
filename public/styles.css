@@ -1,0 +1,115 @@
+/* COUNTERS */
+.flex-container {
+    margin-top: 2rem;
+    padding: 0;
+  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+  
+    list-style: none;
+  }
+  
+  .flex-item {
+    width: auto;
+    height: auto;
+  
+    margin: 16px;
+    padding: 4px;
+  
+    line-height: auto;
+    text-align: center;
+  }
+  
+  .li-container {
+    padding: 32px 16px 16px 16px;
+  
+    border-radius: 10px;
+  
+    -webkit-box-shadow: 0px 10px 36px -6px #C0BFBDBF;
+    -moz-box-shadow: 0px 10px 36px -6px #C0BFBDBF;
+    box-shadow: 0px 10px 36px -6px #C0BFBDBF;
+  }
+  
+  .flex-container h1 {
+    font-family: 'Barlow', sans-serif;
+    color: #000000;
+  }
+  
+  .counter-title {
+    margin-bottom: 16px;
+  }
+  
+  .counter-container {
+    width: 90%;
+    margin: 16px;
+    background-color: white;
+    display: inline-flex;
+  }
+  
+  .counter-total {
+    width: 53px;
+    margin: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3rem;
+    color: #03389C;
+  }
+  
+  .flex-button {
+    width: 2.5rem;
+    height: 2.5rem;
+  
+    margin: 4px;
+    padding: 8px;
+  
+    display: inline-block;
+    box-sizing: unset;
+  
+    background-color: #f9cb24;
+    border-radius: 500px;
+  
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #5647FB;
+    text-align: center;
+    cursor: pointer;
+  
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  .flex-button.subtract {
+    background-color: #c8d6e5;
+    color: #8395a7;
+  
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  .flex-button:hover {
+    background-color: #fbd651;
+    font-size: 2.1rem;
+  
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  .flex-button.subtract:hover {
+    background-color: #dce5ef;
+  
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }

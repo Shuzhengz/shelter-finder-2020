@@ -8,6 +8,7 @@ import Map from './Map'
 import Settings from './Settings'
 import LandingPage from './LandingPage'
 import Help from './Help'
+import Counter from './Counter';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
             <Route path="/settings" component={Settings}/>
             <Route path="/numberofbeds" component={NumberOfBeds}/>
             <Route path="/help" component={Help}/>
+
+            <Route path="/counter" component={Counter}/>
           </Switch>
         </BrowserRouter>
       </header>
