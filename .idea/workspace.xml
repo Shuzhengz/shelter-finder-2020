@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1e7c1c2a-a624-448f-8831-d9f5e9269850" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.App.js">
+  <component name="RunManager" selected="npm.start">
     <configuration name="App.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="App.js" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
@@ -73,7 +73,7 @@
       <workItem from="1608258069434" duration="596000" />
       <workItem from="1608935983635" duration="596000" />
       <workItem from="1609008599834" duration="595000" />
-      <workItem from="1609265644265" duration="106000" />
+      <workItem from="1609265644265" duration="1548000" />
     </task>
     <servers />
   </component>
