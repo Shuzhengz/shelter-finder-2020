@@ -1,4 +1,5 @@
 import React from 'react'
+import "./style-home.css"
 
 const LandingPage = (props) => {
     const  buttonIds = ["topbutton", "informationbutton", "missionbutton", "featuresbutton", "partnersbutton", "contactbutton"]
@@ -24,7 +25,7 @@ const LandingPage = (props) => {
     }
 
     // Slideshow
-    var slideIndex = 1;
+    let slideIndex = 1;
     showSlides(slideIndex);
 
     function plusSlides(n) {
@@ -36,9 +37,9 @@ const LandingPage = (props) => {
     }
 
     function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("slide-container");
-        var dots = document.getElementsByClassName("dot");
+        let i;
+        let slides = document.getElementsByClassName("slide-container");
+        let dots = document.getElementsByClassName("dot");
 
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
@@ -54,7 +55,7 @@ const LandingPage = (props) => {
         slides[slideIndex-1].style.display = "block";
     }
 
-    var nslideIndex = 1;
+    let nslideIndex = 1;
     nshowSlides(nslideIndex);
 
     function nplusSlides(n) {
@@ -66,9 +67,9 @@ const LandingPage = (props) => {
     }
 
     function nshowSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("nslide-container");
-        var dots = document.getElementsByClassName("dot");
+        let i;
+        let slides = document.getElementsByClassName("nslide-container");
+        let dots = document.getElementsByClassName("dot");
 
         if (n > slides.length) {nslideIndex = 1}
         if (n < 1) {nslideIndex = slides.length}
@@ -95,27 +96,27 @@ const LandingPage = (props) => {
 
     return (
         <>
-            <div id="navigation-active-background" className="navigation-active-background"></div>
+            <div id="navigation-active-background" className="navigation-active-background"/>
 
             <div id="side-navigation-bar" className="side-navigation">
                 <div className="side-navigation-content">
-                    <a href="javascript:void(0)" className="closebtn" onClick="closeNav()"></a>
+                    <a href="javascript:void(0)" className="closebtn" onClick="closeNav()"/>
 
                     <div className="links-nonwrap">
-                        <a href="/"><i className="nav-icon" data-feather="home"></i>Home</a>
-                        <a href="/settings"><i className="nav-icon" data-feather="settings"></i>Settings</a>
-                        <a href="/beds"><i className="nav-icon" data-feather="map"></i>Find Beds</a>
-                        <a href="/help"><i className="nav-icon" data-feather="help-circle"></i>Help</a>
+                        <a href="/"><i className="nav-icon" data-feather="home"/>Home</a>
+                        <a path="/settings"><i className="nav-icon" data-feather="settings"/>Settings</a>
+                        <a path="/beds"><i className="nav-icon" data-feather="map"/>Find Beds</a>
+                        <a path="/help"><i className="nav-icon" data-feather="help-circle"/>Help</a>
                     </div>
                 </div>
             </div>
 
             <div className="top-div" id="top">
                 <div className="title-div-flex">
-                    <img src="/static/images/Landing/open-menu.png " className="flex-menu-icon" onClick="openNav()"/>
+                    <img src="images/Landing/open-menu.png " className="flex-menu-icon" onClick="openNav()"/>
 
                     <div className="logo-container">
-                        <img src="/static/images/Landing/logo.png "/>
+                        <img src="images/Landing/logo.png "/>
                     </div>
                 </div>
 
@@ -127,21 +128,21 @@ const LandingPage = (props) => {
 
                     <div className="header-flex-item image">
                         <iframe className="video-iframe" width="560" height="315"
-                                src="https://www.youtube.com/embed/7OSp9DdRU78" frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen></iframe>
+                        src="https://www.youtube.com/embed/7OSp9DdRU78" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen/>
                     </div>
                 </div>
 
                 <button className="down-button light" type="button" id="topbutton"
-                        style="margin-bottom: 32px;"></button>
+                style="margin-bottom: 32px;"/>
             </div>
 
             <div className="section-features-div" id="information">
                 <h1>WHO WE ARE</h1>
 
                 <div className="center-div">
-                    <img src="/static/images/Landing/FullTeam.jpg"
+                    <img src="images/Landing/FullTeam.jpg"
                          style="max-width: 1200px; width: 100%; border-radius: 8px"/>
                 </div>
 
@@ -151,14 +152,14 @@ const LandingPage = (props) => {
                     responders had finding available beds for those in need of shelter, and we've been running the
                     project with a group of committed students ever since.</p>
 
-                <button className="down-button" id="informationbutton" style="margin-top: auto;"></button>
+                <button className="down-button" id="informationbutton" style="margin-top: auto;"/>
             </div>
 
             <div className="section-features-div" id="mission">
                 <h1>OUR MISSION</h1>
 
                 <div className="center-div">
-                    <img src="/static/images/Landing/OurMission.png"
+                    <img src="images/Landing/OurMission.png"
                          style="max-height: 500px; max-width: 100%; border-radius: 8px"/>
                 </div>
 
@@ -168,7 +169,7 @@ const LandingPage = (props) => {
                     We're very grateful for all the support we’ve received, and hope to continue the project and expand
                     it throughout the Sacramento and Yolo County regions.</p>
 
-                <button className="down-button" id="missionbutton" style="margin-top: auto;"></button>
+                <button className="down-button" id="missionbutton" style="margin-top: auto;"/>
             </div>
 
             <div className="section-features-div" id="features">
@@ -180,25 +181,25 @@ const LandingPage = (props) => {
 
                         <div className="slideshow-container">
                             <div className="slide-container">
-                                <img src="/static/images/Landing/ShelterOne.png"/>
+                                <img src="images/Landing/ShelterOne.png"/>
                             </div>
 
                             <div className="slide-container">
-                                <img src="/static/images/Landing/ShelterTwo.png"/>
+                                <img src="images/Landing/ShelterTwo.png"/>
                             </div>
 
-                            <a className="prev" onClick="plusSlides(-1)"></a>
-                            <a className="next" onClick="plusSlides(1)"></a>
+                            <a className="prev" onClick="plusSlides(-1)"/>
+                            <a className="next" onClick="plusSlides(1)"/>
                         </div>
 
                         <div className="feature-flex-row">
-                            <img src="/static/images/Landing/TimeIcon.jpg"/>
+                            <img src="images/Landing/TimeIcon.jpg"/>
 
                             <p>Update your available bed counts in real-time for first responder to view on the map.</p>
                         </div>
 
                         <div className="feature-flex-row">
-                            <img src="/static/images/Landing/SettingsIcon.jpg"/>
+                            <img src="images/Landing/SettingsIcon.jpg"/>
 
                             <p>Effortlessly configure shelter settings (shelter, counter, and contact information).</p>
                         </div>
@@ -209,30 +210,30 @@ const LandingPage = (props) => {
 
                         <div className="slideshow-container">
                             <div className="nslide-container">
-                                <img src="/static/images/Landing/ResponderOne.png"/>
+                                <img src="images/Landing/ResponderOne.png"/>
                             </div>
 
                             <div className="nslide-container">
-                                <img src="/static/images/Landing/ResponderTwo.png"/>
+                                <img src="images/Landing/ResponderTwo.png"/>
                             </div>
 
                             <div className="nslide-container">
-                                <img src="/static/images/Landing/ResponderThree.png"/>
+                                <img src="images/Landing/ResponderThree.png"/>
                             </div>
 
-                            <a className="prev" onClick="nplusSlides(-1)"></a>
-                            <a className="next" onClick="nplusSlides(1)"></a>
+                            <a className="prev" onClick="nplusSlides(-1)"/>
+                            <a className="next" onClick="nplusSlides(1)"/>
                         </div>
 
                         <div className="feature-flex-row">
-                            <img src="/static/images/Landing/MapIcon.jpg"/>
+                            <img src="images/Landing/MapIcon.jpg"/>
 
                             <p>View all Shelters in the area, as well as their real-time bed counts and contact
                                 information.</p>
                         </div>
 
                         <div className="feature-flex-row">
-                            <img src="/static/images/Landing/BedCountIcon.jpg"/>
+                            <img src="images/Landing/BedCountIcon.jpg"/>
 
                             <p>Quickly look for shelters in the area with a specific number of available of beds,
                                 regardless of gender.</p>
@@ -240,7 +241,7 @@ const LandingPage = (props) => {
                     </div>
                 </div>
 
-                <button className="down-button" id="featuresbutton" style="margin-top: auto;"></button>
+                <button className="down-button" id="featuresbutton" style="margin-top: auto;"/>
             </div>
 
             <div className="section-features-div" id="partners">
@@ -249,18 +250,18 @@ const LandingPage = (props) => {
                 <div className="partners-div">
                     <ul className="flex-container">
                         <li className="flex-item">
-                            <img src="/static/images/Landing/FourthAndHope.png "/>
+                            <img src="images/Landing/FourthAndHope.png " alt={"FourthAndHope"}/>
                         </li>
                         <li className="flex-item">
-                            <img src="/static/images/Landing/DavisPD.jpg "/>
+                            <img src="images/Landing/DavisPD.jpg "/>
                         </li>
                         <li className="flex-item">
-                            <img src="/static/images/Landing/SutterDavisHospital.jpg "/>
+                            <img src="images/Landing/SutterDavisHospital.jpg "/>
                         </li>
                     </ul>
                 </div>
 
-                <button className="down-button light" id="partnersbutton" style="margin-top: auto;"></button>
+                <button className="down-button light" id="partnersbutton" style="margin-top: auto;"/>
             </div>
 
             <div className="section-features-div" id="contact">
@@ -270,7 +271,7 @@ const LandingPage = (props) => {
                     us!</p>
 
                 <a href="mailto: contact@shelterfinder.org" className="contact-button">
-                    <span>contact@shelterfinder.org <div className="mail-icon"></div></span>
+                    <span>contact@shelterfinder.org <div className="mail-icon"/></span>
                 </a>
             </div>
         </>

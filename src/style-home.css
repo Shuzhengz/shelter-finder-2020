@@ -1,0 +1,651 @@
+/* GLOBAL */
+html, 
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100%;
+	z-index: 1;
+	position: relative;
+}
+
+img {
+	vertical-align: middle;
+}
+
+p {
+	font-family: "DM Sans";
+	font-size: 2rem;
+}
+
+/* NAVIGATION AND HEADER */
+.logo {
+	max-width: 600px;
+	width: 75%;
+	position: absolute;
+	top: 16px;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.flex-menu-icon {
+	width: 5vw;
+	height: 5vw;
+	max-width: 48px;
+	max-height: 48px;
+	margin-right: auto;
+	cursor: pointer;
+}
+
+.navigation-active-background {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000000;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.side-navigation {
+	height: 100%;
+	width: 0px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	max-width: 100%;
+	padding: 32px 32px 32px 0px;
+	box-sizing: border-box;
+}
+
+.side-navigation-content {
+	height: 100%;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 0px 16px 16px 0px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.side-navigation a {
+	display: block;
+	margin-bottom: 8px;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: #3742FA;
+	text-decoration: none;
+}
+
+.nav-icon {
+	height: 1.5rem;
+	width: 1.5rem;
+	margin-right: 16px;
+	stroke-width: 2.5px;
+	vertical-align: baseline;
+}
+
+.closebtn {
+	position: absolute;
+	top: 32px;
+	right: 32px;
+	font-size: 36px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	width: 32px;
+	height: 32px;
+	background: no-repeat url("images/Landing/Chevron.svg");
+	transform: rotate(180deg);
+	margin-bottom: 32px;
+	cursor: pointer;
+}
+
+.links-nonwrap {
+	padding: 64px;
+	overflow: hidden;
+}
+
+.links-nonwrap a {
+	white-space: nowrap;
+}
+
+.header-flex-container {
+	max-width: 2000px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	align-items: center;
+	margin-bottom: auto;
+}
+
+.header-flex-item {
+	width: auto;
+	height: auto;
+	margin: 16px;
+	padding: 4px;
+	line-height: auto;
+	text-align: center;
+}
+
+.image {
+	width: 50%;
+	padding: 64px;
+	min-width: 800px;
+}
+
+.video-iframe {
+	width: 700px;
+	height: 400px;
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+.title-div-flex {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	align-self: flex-start;
+	margin-bottom: auto;
+
+	padding: 64px;
+}
+
+.logo-container {
+	max-width: 500px;
+	margin-right: auto;
+	padding: 16px;
+}
+
+.logo-container img {
+	width: 100%;
+}
+
+.title-container {
+	padding-left: 32px;
+}
+
+/* SECTIONS */
+.section-features-div {
+	padding: 32px;
+	min-height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.section-features-div h1 {
+	margin: 0;
+	font-family: "Barlow";
+	font-size: 5.2rem;
+	color: #5647FB;
+	letter-spacing: 4px;
+	text-align: center;
+}
+
+.section-features-div h2 {
+	margin: 0px 0px 16px 0px;
+	font-family: "Barlow";
+	font-size: 2.2rem;
+	color: #000000;
+	text-align: center;
+}
+
+#top {
+	background: url("images/Landing/HomePageShelterFinder.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.top-div h1 {
+	margin: 0;
+	font-family: "Barlow";
+	font-size: 5.2rem;
+	color: #ffffff;
+	text-align: right;
+}
+
+.top-div h3 {
+	margin: 0;
+	font-family: "DM Sans";
+	font-size: 2rem;
+	color: #ffffff;
+	text-align: right;
+}
+
+#information {
+	background: url("images/Landing/WhoWeAreBackground.svg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#information p,
+#mission p {
+	max-width: 1200px;
+	width: 100%;
+	padding: 32px;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#mission {
+	background: url("images/Landing/OurMissionBackground.svg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#features {
+	background: url("images/Landing/test2.svg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#partners {
+	background: url("images/Landing/partnersimage.svg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#partners h1,
+#contact h1 {
+	color: #ffffff;
+}
+
+#contact {
+	background: url("images/Landing/contactimage.svg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+
+#contact p {
+	color: #ffffff;
+	text-align: center;
+}
+
+/* SLIDESHOW */
+.slide-container {
+	display: none
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.slideshow-container img {
+	width: 100%;
+	box-shadow: 0px 0px 36px -6px #C0BFBDBF;
+	border-radius: 8px;
+}
+
+.slides-flex-container {
+	width: 100%;
+	max-width: 2000px;
+	margin: 0 auto;
+	padding: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	align-items: start;
+}
+
+.slides-flex-item {
+	width: auto;
+	height: auto;
+	padding-left: 64px;
+	padding-right: 64px;
+	line-height: auto;
+	text-align: center;
+	max-width: 50%;
+}
+
+.prev,
+.next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: auto;
+	padding: 1.2vw;
+	user-select: none;
+	cursor: pointer;
+}
+
+.next {
+	right: -64px;
+	background: no-repeat url("images/Landing/Chevron.svg");
+}
+
+.prev {
+	left: -64px;
+	background: no-repeat url("images/Landing/Chevron.svg");
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.feature-flex-row {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+}
+
+.feature-flex-row img {
+	width: 64px;
+	height: 64px;
+	border-radius: 100px;
+}
+
+.feature-flex-row p {
+	font-size: 1.5rem;
+	text-align: left;
+	padding-left: 32px;
+}
+
+/* PARTNERS */
+.partners-div {
+	width: 100%;
+	background-color: #ffffff;
+	padding: 64px;
+	margin-top: 32px;
+	border-radius: 16px;
+}
+
+.flex-container {
+	margin-top: 2rem;
+	padding: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+.flex-item {
+	text-align: center;
+	flex: 1 1 20em;
+	padding: 32px;
+	box-sizing: border-box;
+}
+
+.flex-item img {
+	max-width: 100%;
+	max-height: 150px;
+}
+
+/* CONTACT */
+
+.contact-button {
+	transform: scale(1);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	text-decoration: none;
+	background-color: transparent;
+	border: 5px solid #ffffff;
+	outline: none;
+	border-radius: 8px;
+	padding: 32px;
+	max-width: 100%;
+	font-family: "Barlow";
+	font-size: 2rem;
+	color: #ffffff;
+	cursor: pointer;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+.contact-button:hover {
+	background-color: #ffffff;
+	color: #000000;
+	transform: scale(1.05);
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+.mail-icon {
+	display: inline-block;
+	background: no-repeat url("images/Landing/mail-light.svg");
+	background-size: 100% 100%;
+	width: 36px;
+	height: 36px;
+	vertical-align: middle;
+	margin-left: 16px;
+}
+
+.contact-button:hover .mail-icon {
+	background: no-repeat url("images/Landing/mail-dark.svg");
+	background-size: 100% 100%;
+}
+
+.down-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	width: 64px;
+	height: 64px;
+	background: no-repeat url("images/Landing/Chevron.svg");
+	transform: rotate(90deg);
+	cursor: pointer;
+}
+
+.light {
+	background: no-repeat url("images/Landing/ChevronLight.svg");
+}
+
+@media only screen and (max-width: 2000px) {
+	.top-div h1,
+	.section-features-div h1 {
+		font-size: 4rem;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		transition: all .5s ease;
+	}
+}
+
+@media only screen and (max-width: 1720px) {
+	.top-div h3,
+	.top-div h1 {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1275px) {
+	.slides-flex-container {
+		flex-flow: row wrap;
+		-webkit-flex-flow: row wrap;
+	}
+
+	.slides-flex-item {
+		max-width: 100%;
+	}
+
+	.prev,
+	.next {
+		padding: 2vw;
+	}
+}
+
+@media only screen and (max-width: 930px) {
+	.image {
+		min-width: 100%;
+	}
+
+	.prev,
+	.next {
+		padding: 2.5vw;
+	}
+
+	.slides-flex-item {
+		padding-left: 64px;
+		padding-right: 64px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.contact-button {
+		font-size: 1.25rem;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.title-div-flex {
+		padding: 32px;
+	}
+
+	.title-container {
+		padding-left: 0px;
+	}
+
+	.top-div h1 {
+		font-size: 3rem;
+	}
+
+	.top-div h3 {
+		font-size: 1.5rem;
+	}
+
+	.image {
+		padding: 32px;
+	}
+
+	.section-features-div h1 {
+		font-size: 2.5rem;
+	}
+
+	.section-features-div h2 {
+		font-size: 1.5rem;
+	}
+
+	#information p,
+	#mission p,
+	#contact p,
+	.feature-flex-row p {
+		font-size: 1.25rem;
+	}
+
+	.feature-flex-row {
+		flex-direction: column;
+	}
+
+	.feature-flex-row img {
+		margin-top: 32px;
+	}
+
+	.feature-flex-row p {
+		padding-left: 0px;
+		text-align: center;
+	}
+
+	.slides-flex-item {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.next {
+		right: -32px;
+	}
+
+	.prev {
+		left: -32px;
+	}
+
+	.down-button {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		width: 32px;
+		height: 32px;
+		background: no-repeat url("images/Landing/Chevron.svg");
+		transform: rotate(90deg);
+		cursor: pointer;
+	}
+
+	.light {
+		background: no-repeat url("images/Landing/ChevronLight.svg");
+	}
+
+	.mail-icon {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/* OTHER */
+.center-div {
+	margin: 0 auto;
+	padding-top: 64px;
+	margin-bottom: 32px;
+}
+
+* {
+	box-sizing: border-box;
+}
