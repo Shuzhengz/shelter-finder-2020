@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1e7c1c2a-a624-448f-8831-d9f5e9269850" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpAndroid1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpAndroid2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpAndroid3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpAndroid4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpCounters.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpError.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpFeedback.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpFindBeds.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpIphone1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpIphone2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpIphone3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpLogin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpSettings.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/HelpShowBeds.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/LandingPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +76,7 @@
       <workItem from="1609265644265" duration="2188000" />
       <workItem from="1609302723537" duration="968000" />
       <workItem from="1609370491330" duration="1772000" />
-      <workItem from="1609453689964" duration="1820000" />
+      <workItem from="1609453689964" duration="2859000" />
     </task>
     <servers />
   </component>

@@ -85,7 +85,7 @@ const LandingPage = (props) => {
         slides[nslideIndex-1].style.display = "block";
         dots[nslideIndex-1].className += " active";
 
-        const id = this.id
+        let id = this.id
         console.log(id)
 
         (".down-button").click(function() {
