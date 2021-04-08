@@ -4,6 +4,7 @@ import "./style-home.css"
 const LandingPage = (props) => {
     const  buttonIds = ["topbutton", "informationbutton", "missionbutton", "featuresbutton", "partnersbutton", "contactbutton"]
     const  ids = ["top", "information", "mission", "features", "partners", "contact"]
+    let slideIndex = 1;
 
     // Navigation
     function openNav() {
@@ -25,7 +26,6 @@ const LandingPage = (props) => {
     }
 
     // Slideshow
-    let slideIndex = 1;
     showSlides(slideIndex);
 
     function plusSlides(n) {
@@ -52,7 +52,7 @@ const LandingPage = (props) => {
             dots[i].className = dots[i].className.replace(" active", "");
         }
 
-        slides[slideIndex-1].style.display = "block";
+        //slides[(slideIndex-1)].style.display = "block";
     }
 
     let nslideIndex = 1;
@@ -82,16 +82,16 @@ const LandingPage = (props) => {
             dots[i].className = dots[i].className.replace(" active", "");
         }
 
-        slides[nslideIndex-1].style.display = "block";
-        dots[nslideIndex-1].className += " active";
+        //slides[nslideIndex-1].style.display = "block";
+        //dots[nslideIndex-1].className += " active";
 
-        let id = this.id
-        console.log(id)
+        //let id = this.id
+        //console.log(id)
 
-        (".down-button").click(function() {
-            ('html,body').animate({
-                scrollTop: (`#${ids[buttonIds.indexOf(id) + 1]}`).offset().top}, 1000)
-        });
+        //(".down-button").click(function() {
+        //    ('html,body').animate({
+        //        scrollTop: (`#${ids[buttonIds.indexOf(id) + 1]}`).offset().top}, 1000)
+        //});
     }
 
     return (
@@ -135,7 +135,7 @@ const LandingPage = (props) => {
                 </div>
 
                 <button className="down-button light" type="button" id="topbutton"
-                style="margin-bottom: 32px;"/>
+                        style={{marginBottom: '32px'}}/>
             </div>
 
             <div className="section-features-div" id="information">
@@ -143,7 +143,7 @@ const LandingPage = (props) => {
 
                 <div className="center-div">
                     <img src="images/Landing/FullTeam.jpg"
-                         style="max-width: 1200px; width: 100%; border-radius: 8px"/>
+                         style={{maxWidth: '1200px', width: '100%', borderRadius: '8px'}}/>
                 </div>
 
                 <p>We're a team of high school students from FRC Team 1678 Citrus Circuits. We're passionate about
@@ -152,7 +152,7 @@ const LandingPage = (props) => {
                     responders had finding available beds for those in need of shelter, and we've been running the
                     project with a group of committed students ever since.</p>
 
-                <button className="down-button" id="informationbutton" style="margin-top: auto;"/>
+                <button className="down-button" id="informationbutton" style={{marginTop: 'auto'}}/>
             </div>
 
             <div className="section-features-div" id="mission">
@@ -160,7 +160,7 @@ const LandingPage = (props) => {
 
                 <div className="center-div">
                     <img src="images/Landing/OurMission.png"
-                         style="max-height: 500px; max-width: 100%; border-radius: 8px"/>
+                         style={{marginHeight: '500px', maxWidth: '100%', borderRadius: '8px'}}/>
                 </div>
 
                 <p>Our mission is to eliminate slow communication between first responders and homeless shelters in our
@@ -169,11 +169,11 @@ const LandingPage = (props) => {
                     We're very grateful for all the support we’ve received, and hope to continue the project and expand
                     it throughout the Sacramento and Yolo County regions.</p>
 
-                <button className="down-button" id="missionbutton" style="margin-top: auto;"/>
+                <button className="down-button" id="missionbutton" style={{marginTop: 'auto'}}/>
             </div>
 
             <div className="section-features-div" id="features">
-                <h1 style="margin-bottom: 32px">FEATURES</h1>
+                <h1 style={{marginBottom: '32px'}}>FEATURES</h1>
 
                 <div className="slides-flex-container">
                     <div className="slides-flex-item">
@@ -241,7 +241,7 @@ const LandingPage = (props) => {
                     </div>
                 </div>
 
-                <button className="down-button" id="featuresbutton" style="margin-top: auto;"/>
+                <button className="down-button" id="featuresbutton" style={{marginTop: 'auto'}}/>
             </div>
 
             <div className="section-features-div" id="partners">
@@ -261,7 +261,7 @@ const LandingPage = (props) => {
                     </ul>
                 </div>
 
-                <button className="down-button light" id="partnersbutton" style="margin-top: auto;"/>
+                <button className="down-button light" id="partnersbutton" style={{marginTop: `auto` }}/>
             </div>
 
             <div className="section-features-div" id="contact">
