@@ -21,7 +21,6 @@ function App() {
             <Route path="/settings" component={Settings}/>
             <Route path="/numberofbeds" component={NumberOfBeds}/>
             <Route path="/help" component={Help}/>
-
             <Route path="/counter" component={Counter}/>
           </Switch>
         </BrowserRouter>

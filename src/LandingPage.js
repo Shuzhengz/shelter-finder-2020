@@ -113,10 +113,10 @@ const LandingPage = (props) => {
 
             <div className="top-div" id="top">
                 <div className="title-div-flex">
-                    <img src="images/Landing/open-menu.png " className="flex-menu-icon" onClick="openNav()"/>
+                    <img src="./images/Landing/open-menu.png" className="flex-menu-icon" onClick="openNav()" alt = "flex menu icon"/>
 
                     <div className="logo-container">
-                        <img src="images/Landing/logo.png "/>
+                        <img src="images/Landing/logo.png" alt = "logo"/>
                     </div>
                 </div>
 
