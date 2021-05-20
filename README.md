@@ -14,7 +14,7 @@ To download and set up this project:
 2. Travel to the project directory in your terminal (or the Visual Studio Code terminal), and type `npm start`. This will run the project locally, and should automatically open in your browser when ready.
 
 ## Running Shelter Finder on Other Devices
-If you'd like to test the project on other devices (not locally), then
+If you'd like to test the project on other devices (not locally), then:
 1. Find out what your IP address is (it'll most likely look similar to this - 192.168.0.xx)
 2. In your terminal, type `npm start 0.0.0`.
 3. Make sure your computer and whatever devices you'd like to test on are all using the same WiFi
