@@ -2,17 +2,8 @@ import React from 'react'
 import "./style-home.css"
 
 const LandingPage = (props) => {
-    const buttonIds = [
-        "topbutton",
-        "informationbutton",
-        "missionbutton",
-        "featuresbutton",
-        "partnersbutton",
-        "contactbutton"
-    ];
-
-    const ids = ["top", "information", "mission", "features", "partners", "contact"];
-
+    const  buttonIds = ["topbutton", "informationbutton", "missionbutton", "featuresbutton", "partnersbutton", "contactbutton"]
+    const  ids = ["top", "information", "mission", "features", "partners", "contact"]
     let slideIndex = 1;
 
     // Navigation
@@ -45,9 +36,9 @@ const LandingPage = (props) => {
         showSlides(slideIndex = n);
     }
 
-	function showElementsByClassName(n, className) {
+    function showSlides(n) {
         let i;
-        let slides = document.getElementsByClassName(className);
+        let slides = document.getElementsByClassName("slide-container");
         let dots = document.getElementsByClassName("dot");
 
         if (n > slides.length) {slideIndex = 1}
@@ -60,10 +51,8 @@ const LandingPage = (props) => {
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-	}
 
-    function showSlides(n) {
-		showElementsByClassName(n, "slide-container")
+        //slides[(slideIndex-1)].style.display = "block";
     }
 
     let nslideIndex = 1;
@@ -78,7 +67,31 @@ const LandingPage = (props) => {
     }
 
     function nshowSlides(n) {
-		showElementsByClassName(n, "nslide-container")
+        let i;
+        let slides = document.getElementsByClassName("nslide-container");
+        let dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) {nslideIndex = 1}
+        if (n < 1) {nslideIndex = slides.length}
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        //slides[nslideIndex-1].style.display = "block";
+        //dots[nslideIndex-1].className += " active";
+
+        //let id = this.id
+        //console.log(id)
+
+        //(".down-button").click(function() {
+        //    ('html,body').animate({
+        //        scrollTop: (`#${ids[buttonIds.indexOf(id) + 1]}`).offset().top}, 1000)
+        //});
     }
 
     return (
