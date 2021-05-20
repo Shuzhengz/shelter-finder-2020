@@ -9,7 +9,7 @@ Hi! Thank you for working on Shelter Finder, your contribution is very appreciat
 
 ## Project Setup | Running Shelter Finder on Your Computer
 
-To download and set up this project,
+To download and set up this project:
 1. Clone this project
 2. Travel to the project directory in your terminal (or the Visual Studio Code terminal), and type `npm start`. This will run the project locally, and should automatically open in your browser when ready.
 
