@@ -2,6 +2,10 @@
 
 Hi! Thank you for working on Shelter Finder, your contribution is very appreciated. This repository contains the Shelter Finder 2020 redevelopment using ReactJS and Firebase/Firestore. Read this file for installation and setup instructions.
 
+## Status
+
+Current development and support for the project has been halted
+
 ## Installations
 
 1. Install [node.js](https://nodejs.org/en/).
