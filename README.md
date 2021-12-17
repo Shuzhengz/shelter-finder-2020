@@ -6,6 +6,8 @@ Hi! Thank you for working on Shelter Finder, your contribution is very appreciat
 
 Current development and support for the project has been halted
 
+For the most recent status of the app, please visit [shelterfinder.org](https://shelterfinder.org/)
+
 ## Installations
 
 1. Install [node.js](https://nodejs.org/en/).
